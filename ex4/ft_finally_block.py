@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class GardenError (Exception):
     def __init__(self, e: str = "Unknown Garden Error") -> None:
         super().__init__(e)

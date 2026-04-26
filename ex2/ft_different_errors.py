@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def garden_operations(operation_number: int) -> None:
     print(f"Testing operation {operation_number}...")
     if operation_number == 0:
