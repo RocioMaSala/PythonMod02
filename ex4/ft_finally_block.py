@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-class GardenError (Exception):
+class GardenError(Exception):
     def __init__(self, e: str = "Unknown Garden Error") -> None:
         super().__init__(e)
 
@@ -11,7 +11,7 @@ class PlantError(GardenError):
 
 
 def water_plant(plant_name: str) -> None:
-    if plant_name[0].isupper():
+    if plant_name.capitalize() == plant_name:
         print(f"Watering {plant_name}: [OK]")
     else:
         raise PlantError(f"Invalid plant name to water: '{plant_name}'")
